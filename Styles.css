@@ -306,11 +306,15 @@ nav ul a {
 }
 
 .getokhnow_p{
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.getokhnow_p_1{
+    width: 60%;
 }
 
 .getokhnow_p_1 h1{
@@ -329,4 +333,59 @@ nav ul a {
     padding: 10px 30px;
     border-radius: 20px;
     font-weight: 500;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1000px){
+    html {
+        font-size: 14px;
+    }
+
+    .atouts {
+            flex-direction: column;
+            
+        }
+
+    .doing {
+        flex-direction: column;
+    }
+
+    .services_row {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media only screen and (max-width: 800px){
+    html {
+            font-size: 12px;
+        }
+
+    .home {
+        flex-direction: column;
+        height: 400px;
+    }
+
+    .home img{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .services_row{
+        flex-direction: column;
+    }
+
+    .services_col{
+        margin-bottom: 10px;
+    }
+
+    .communication{
+        margin-top: 30px;
+    }
+
+    .communication_col img{
+        display: none;
+    }
 }
